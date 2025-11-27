@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data River - Noticia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+
+.noticia {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.noticia h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.noticia img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.noticia-texto {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+</style>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="../img/River.png" alt="Logo River Plate" width="100">
+            <h1 style="margin-left:10px;">Data River</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../noticias.html">Noticias</a></li>
+                <li><a href="../fixture.html">Fixture y Posiciones</a></li>
+                <li><a href="../plantel.html">Plantel</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <article class="noticia">
+
+            <h1>Maxi Meza fue operado con éxito de su lesión: el tiempo que estará sin jugar en River</h1>
+            <p><b>El volante pasó por el quirófano después del diagnóstico recibido el lunes por la mañana y ahora iniciará la rehabilitación para volver en condiciones.</b></p>
+
+            <img src="../img/noticia4.png" alt="Noticia Maximiliano Meza">
+
+            <div class="noticia-texto">
+                <p>
+                    Maximiliano Meza fue otro de los grandes saldos negativos que tuvo River el pasado fin de semana, en el cual profundizó su crisis por resultados adversos y rendimientos que dejan mucho que desear. 
+                    El jugador sufrió una avulsión (desprendimiento) del tendón rotuliano de la rodilla izquierda y este miércoles fue operado en el Sanatorio Agote, por lo que iniciará su recuperación.
+                </p>
+
+                <br>
+
+                <p>
+                    Durante el primer tiempo del Superclásico, el volante quedó tendido en el césped con claras señales de dolor y tuvo que ser reemplazado al no poder pisar bien. 
+                    Tras el partido, se retiró del estadio con una férula que le inmovilizó la zona. 
+                    Ese mismo domingo se realizó los estudios correspondientes, los cuales arrojaron el diagnóstico que lo marginará nuevamente.
+                </p>
+
+                <br>
+                <p>
+                    Tal como estaba programado desde el martes, en la tarde de este miércoles Meza fue intervenido quirúrgicamente por Fernando Macías, uno de los médicos del plantel del Millonario, y resultó ser un éxito. 
+                    Lo que sigue para el ex Gimnasia e Independiente será aguarar otro prolongado período sin jugar, el cual se suma al que ya tuvo en este segundo semestre.
+                </p>
+            </div>
+
+        </article>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Data River. Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="https://x.com/?lang=es" target="_blank"><img style="height: 30px;"src="../img/twitter.png" alt="Logo Twitter"></a> | <a href="https://www.instagram.com/" target="_blank"> <img style="height: 30px;" src="../img/instagram.png" alt="Logo Intagram"></a></p>
+    </footer>
+</body>
+</html>

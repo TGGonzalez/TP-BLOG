@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data River - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Contacto y formularios de Data River. Todo sobre el Millonario.">
+</head>
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d32f2f; 
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #b71c1c;
+}
+
+#message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/River.png" alt="Logo River Plate" width="100">
+            <h1>Data River</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="fixture.html">Fixture y Posiciones</a></li>
+                <li><a href="plantel.html">Plantel</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Formularios:</h2><br>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Enviar</button>
+                <p id="message">Formulario enviado!</p>
+            </form>
+        </section>
+    </main>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const apellido = document.getElementById('apellido').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message');
+
+            if (nombre === '' || apellido === '' || email === '') {
+                alert('Por favor, completa todos los campos.');
+                message.style.display = 'none'; 
+            } else {
+                message.style.display = 'block'; 
+                this.reset(); 
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 2000);
+            }
+        });
+    </script>
+    <footer>
+        <p>&copy; 2025 Data River. Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="https://x.com/?lang=es" target="_blank"><img style="height: 30px;" src="./img/twitter.png" alt="Logo Twitter"></a> | <a href="https://www.instagram.com/" target="_blank"> <img style="height: 30px;" src="./img/instagram.png" alt="Logo Instagram"></a></p>
+    </footer>
+</body>
+</html>

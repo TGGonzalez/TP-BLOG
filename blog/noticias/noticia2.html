@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data River - Noticia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+
+.noticia {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.noticia h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.noticia img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.noticia-texto {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+</style>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="../img/River.png" alt="Logo River Plate" width="100">
+            <h1 style="margin-left:10px;">Data River</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../noticias.html">Noticias</a></li>
+                <li><a href="../fixture.html">Fixture y Posiciones</a></li>
+                <li><a href="../plantel.html">Plantel</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <article class="noticia">
+
+            <h1>¿Habrá sorpresas? La posible formación de River frente a Vélez</h1>
+            <p><b>Por obligación debido a lesiones, suspensiones o convocatorias y también por bajos rendimientos, Marcelo Gallardo podría modificar tanto la defensa como el mediocampo y el ataque pensando en el domingo.</b></p>
+
+            <img src="../img/noticia2.png" alt="Noticia Gallardo">
+
+            <div class="noticia-texto">
+                <p>
+                    Se viene un domingo absolutamente decisivo no solo para el futuro inmediato deportivo de River, sino pensando a mediano plazo de cara al 2026. 
+                    La visita de riesgo a la cancha de Vélez provoca que el equipo de Marcelo Gallardo se juegue tanto el pase a los octavos de final del Torneo Clausura como la posición final de la tabla anual pensando en la próxima Copa Libertadores.
+                </p>
+
+                <br>
+
+                <p>
+                    En defensa ya hay dos bajas confirmadas por haber llegado a las cinco amarillas: Lucas Martínez Quarta y Marcos Acuña. El lateral izquierdo campeón del mundo será reemplazado por Milton Casco, pero la gran duda pasa por saber si Gallardo mantendrá la línea de cinco defensores o si volverá a plantar cuatro. Si sucede lo primero, Juan Carlos Portillo se podría sumar a la línea de zagueros, y si sucede lo segundo el propio Portillo podría reemplazar a Paulo Díaz por bajos rendimientos, o la otra alternativa es la de Sebastián Boselli.
+
+                    En la mitad de la cancha también surgen muchos interrogantes. ¿Será el partido donde Enzo Pérez vuelva a jugar de arranque? Sabiendo que Portillo puede pasar a la defensa y que Kevin Castaño fue convocado por la Selección Colombia, las chances que el referente de River tenga nuevamente una chance crecen en demasía. Y tanto Giuliano Galoppo como Santiago Lencina también cuentan con posibilidades de meterse en el equipo debido a la gravísima lesión que sufrió Maximiliano Meza en la Bombonera.
+
+                    En el ataque se barajan dos alternativas. Una es el regreso a la titularidad de Juanfer Quintero para oficiar de enganche detrás de los dos delanteros, y la otra es incluir un delantero más que podría ser Ian Subiabre, sabiendo que Facundo Colidio todavía sigue desgarrado y no llegará a recuperarse para el fin de semana.
+                </p>
+
+                <br>
+            </div>
+
+        </article>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Data River. Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="https://x.com/?lang=es" target="_blank"><img style="height: 30px;"src="../img/twitter.png" alt="Logo Twitter"></a> | <a href="https://www.instagram.com/" target="_blank"> <img style="height: 30px;" src="../img/instagram.png" alt="Logo Intagram"></a></p>
+    </footer>
+</body>
+</html>

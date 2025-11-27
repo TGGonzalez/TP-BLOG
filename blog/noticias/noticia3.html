@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data River - Noticia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+
+.noticia {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.noticia h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.noticia img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.noticia-texto {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+</style>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="../img/River.png" alt="Logo River Plate" width="100">
+            <h1 style="margin-left:10px;">Data River</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../noticias.html">Noticias</a></li>
+                <li><a href="../fixture.html">Fixture y Posiciones</a></li>
+                <li><a href="../plantel.html">Plantel</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <article class="noticia">
+
+            <h1>El inesperado pedido que hará Argentinos Juniors de cara a la última fecha</h1>
+            <p><b>A la espera de la definición de la tabla anual, Argentinos Juniors podría hacerle un pedido a la Liga Profesional: de qué se trata.</b></p>
+
+            <img src="../img/noticia3.png" alt="Noticia Argentinos Juniors">
+
+            <div class="noticia-texto">
+                <p>
+                    La fecha 16 del Torneo Clausura será trascendental, ya que definirá los accesos a las diferentes competiciones internacionales. A raíz de los resultados recientes, River llegará a su partido contra Vélez en puesto de Copa Sudamericana. 
+                    Es por eso que, al igual que el propio partido del Millonario, habrá que seguir de cerca lo que suceda con Argentinos Juniors, tercero en la tabla anual.
+                </p>
+
+                <br>
+
+                <p>
+                    El Superclásico dejó al CARP en la cuerda floja, y el triunfo del Bicho frente a Belgrano aún más. Ahora, el equipo de Gallardo ya no depende de sí mismo para clasificar a la Copa Libertadores 2026 mediante la tabla anual, sino que deberá ganar y esperar otros resultados, principalmente el del conjunto de La Paternal frente al Pincha.
+
+                    Este martes, la Liga Profesional anunció cómo se jugará la fecha 16 del Torneo Clausura 2025. Por un lado, River enfrentará a Vélez el domingo 16 de noviembre a las 17.00 horas. Por su parte, desde la LPF pusieron el duelo de Argentinos a las 20.15 de ese día, por lo que jugaría con los resultados puestos, y sabiendo lo que necesita para clasificar a la Libertadores. Sin embargo, eso podría cambiar.
+                </p>
+                <br>
+                <p>
+                    Según trascendió en horas recientes, Argentinos Juniors podría pedir cambiar el horario de su partido frente a Estudiantes para jugar a la misma hora que River. 
+                    De esta forma, y suponiendo que el Millonario supere a Vélez, el Bicho buscaría evitar jugar con la presión de saber que debe ganar sí o sí para mantenerse en puesto de clasificación a la próxima Copa Libertadores.
+                </p>
+
+                <br>
+            </div>
+
+        </article>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Data River. Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="https://x.com/?lang=es" target="_blank"><img style="height: 30px;"src="../img/twitter.png" alt="Logo Twitter"></a> | <a href="https://www.instagram.com/" target="_blank"> <img style="height: 30px;" src="../img/instagram.png" alt="Logo Intagram"></a></p>
+    </footer>
+</body>
+</html>
